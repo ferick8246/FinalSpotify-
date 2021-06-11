@@ -1,0 +1,33 @@
+{{!-- <section class="hero is-success is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Fullheight title
+      </h1>
+      <h2 class="subtitle">
+        Fullheight subtitle
+      </h2>
+    </div>
+  </div>
+</section> --}}
+<div>
+
+  <header class="intro-top">
+    <h1>Spotifizenator<span id="nine-thou">9000</span></h1>
+  </header>
+  <main class="intro">
+    <p>An easy-to-use webapp to discover new music.<br>Create your own playlist or browse others.</p>
+    <div class="btn-wrapper">
+      <button id="create-btn" class="block accent">Create</button>
+      <button id="view-btn" class="block">Browse</button>
+    </div>
+  </main>
+</div>
+<script>
+  document.getElementById('create-btn').onclick = () =>
+    (window.location.href = '/login');
+  document.getElementById('view-btn').onclick = () => {
+    (window.location.href = '/browse');
+    //fetch('/browse');
+  }
+</script>

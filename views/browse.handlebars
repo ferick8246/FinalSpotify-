@@ -1,0 +1,15 @@
+<header id="browse-header">
+  <h1 class="new-header">Browse Playlists</h1>
+  <p id="create-link"><button id="lil-create-btn" class="inline accent block">or create one</button></p>
+</header>
+<section id="existing-wrapper">
+  {{#each info}}
+  <p class="block fixed row-item"><span>{{dataValues.title}}</span><a href="{{dataValues.url}}" target="_blank"><img
+        height="18" width="18" src="https://unpkg.com/simple-icons@v4/icons/spotify.svg" /></a></p>
+  {{/each}}
+</section>
+
+<script>
+  document.getElementById('lil-create-btn').onclick = () =>
+    (window.location.href = '/login');
+</script>

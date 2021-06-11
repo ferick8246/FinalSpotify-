@@ -1,0 +1,30 @@
+<header id="create-header">
+  <p id="welcome-msg">Welcome, {{currentUser}}!</p>
+  <h1 class="new-header" id="create-h1">Create Playlist</h1>
+  <p id="browse-link"><button id="lil-browse-btn" class="inline accent block">or browse some</button></p>
+</header>
+<form action="#">
+  <div class="btn-wrapper">
+    <div class="block fixed wrapper">
+      <input type="text" name="artist_name" placeholder="Enter an artist/band...">
+    </div>
+    <button id="search-btn" class="block accent">Search</button>
+  </div>
+</form>
+{{!-- <div class="slidecontainer block fixed wrapper">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div> --}}
+<form action="#" id="save-wrapper" style="display:none">
+  <div class="block fixed wrapper">
+    <input type="text" name="playlist_name" placeholder="Enter playlist name...">
+  </div>
+  <button id="save-btn" class="block">Save</button>
+  <p id="added-msg">added playlist!</p>
+</form>
+<section id="playlist-wrapper">
+</section>
+
+<script>
+  document.getElementById('lil-browse-btn').onclick = () =>
+    (window.location.href = '/browse');
+</script>
