@@ -106,7 +106,7 @@ const getArtistByAlbum = async albumId => {
 const generatePlaylistContainer = async title => {
   try {
     let generatedPlaylist = spotifyApi.createPlaylist(title, {
-      description: 'Playlist created using Spotifizenator9000!',
+      description: 'Playlist created using Spotifizena!',
       public: true,
     });
     return generatedPlaylist;
